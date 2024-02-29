@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    background: url(Froggy.jpg) no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .5), 0 10px 10px rgba(0, 0, 0, .1);
+    border: 2px solid rgba(255, 255, 255, .5);
+    background:  transparent;
+    transition: .5s;
+    backdrop-filter: blur(20px);
+
+}
+
+.content:hover {
+   box-shadow: 0 3px 6px rgba(0, 0, 0, .5), 0 3px 6px rgba(0, 0, 0, .1);
+   transform: translate(opx, -8px);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+p{
+    text-align: center;
+    padding-top: 0 8px;
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+li{
+    padding-top: 0;
+
+}
+
+.fa{
+    font-size: 26px;
+    transition: .5s;
+    margin: 3px;
+}
+
+.checked{
+    color: rgb(249, 229, 0);
+}
+
+.fa:hover{
+    transform: scale(1.3);
+    transition: .7s;
+}
+button{
+    text-align: center;
+    font-size: 24px;
+    color: antiquewhite;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.buy-1{
+    background: rgb(21, 150, 255);
+}
+.buy-2{
+    background: rgb(240, 56, 166);
+}
+.buy-3{
+    background: rgb(255, 156, 240);
+}
+.buy-4{
+    background: rgb(255, 151, 151);
+}
+
+@media(max-width:1000px){
+    .content{
+        width: 45px;
+    }
+}
+
+@media(max-width:750px){
+    .content{
+        width: 100%;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: darkgreen;
+    user-select: none;
+    text-shadow: 2px 2px 0 #f0ecb4;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(199, 212, 168);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: darkgreen;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #f0ecb4;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: darkgreen;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover {
+    background: #f0ecb4;
+    color: darkgreen;
+}

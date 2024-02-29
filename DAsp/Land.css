@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: darkgreen;
+    padding-top: 50px;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: -50px;
+    text-shadow: 1px 1px 0 antiquewhite;
+}
+.content h4{
+    margin: 1px;
+    font-weight: 100;
+    line-height: 25px;
+    color: antiquewhite;
+    text-shadow: 1px 1px 0 darkgreen;
+}
+
+button{
+    width: 175px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    border:  2px solid antiquewhite;
+    background: transparent;
+    color: darkgreen;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -100px;
+    transition: .5s;
+}
+
+button:hover{
+    color: #f0ecb4;
+    background: darkgreen;
+}
+
+.btn{
+    padding-top: 100px;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Froggy.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrappe{
+position: relative;
+width: 1200px;
+height: 440px;
+background: transparent;
+border: 2px solid rgba(255, 255, 255, .5);
+border-radius: 200px;
+backdrop-filter: blur(20px);
+box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
